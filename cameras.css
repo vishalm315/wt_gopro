@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color:#302F4D;
+}
+
+nav {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+}
+
+nav ul{
+    /* border: 1px solid black; */
+    flex: 1;    
+    max-width: 700px;
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+nav ul li{
+    /* display: inline; */
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+nav a:hover{
+    color: #6EFAFB;
+    font-size: 20px;
+}
+
+nav h3{
+    color: plum;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+
+section{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.container{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: space-around;
+    align-content: space-between;
+    align-self:flex-start;
+   
+}
+
+.img{
+    /* flex: 1; */
+    /* border: 1px solid red; */
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #302F4D;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+.img img{
+    width: 300px;
+    height: 220px;
+    padding-bottom: 20px;
+}
+
+.img h3{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: aquamarine;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.img ul li{
+    list-style: none;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.img button{
+    width: 100px;
+    height: 40px;
+    background-color: #F95738;
+    border: 1px solid #F95738;
+    border-radius: 8px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.img button:hover{
+    background-color: white;
+    color:#F95738;
+    border: 1px solid white;
+}
+
+.text-footer {
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+}

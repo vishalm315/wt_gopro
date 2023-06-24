@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gopro.com</title>
+    <link rel="stylesheet" href="detail.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h2>GoPro</h2>
+        </div>
+        <nav class="spc">
+            <ul>
+                <li><a href="camera.html">Cameras</a></li>
+                <li><a href="boot.html">Accessories</a></li>
+                <!-- <li><a href="sevice.html">SERVICE</a></li> -->
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input class="srch" type="text" name="" placeholder="Search here">
+            <a href="#"><button class="btn">Search</button></a>
+        </div>
+    </div>
+    <h1>Shop By Category</h1>
+    <div class="choice">
+        <h3>Check Your Favourite Camera</h3>
+        <form id="form" onsubmit="myFunction1()">
+            <label for="name">Name:</label>
+            <input type="text" id="name"><br>
+            <label for="tel">Model:</label>
+            <input type="tel" id="tel"><br>
+            <label for="mySelect">Select Variant:</label>
+            <select id="mySelect" onchange="myFunction()">
+                <option value="Hero 11">Hero 11</option>
+                <option value="Hero 10">Hero 10</option>
+                <option value="Hero 9">Hero 9</option>
+                <option value="Insta 360">Insta 360</option>
+                <option value="Gopro Drone">Gopro Drone</option>
+                <option value="Hero 8">Hero 8</option>
+                <option value="Hero 7">Hero 7</option>
+            </select><br>
+            <input type="submit" value="Check" class="btn">
+        </form>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("mySelect").value;
+                document.getElementById("demo").innerHTML = "You selected: " + x;
+            }
+        </script>
+        <script>
+            const form = document.getElementById("form");
+
+            form.addEventListener("focus",(event) => {
+                event.target.style.background = "pink";
+            },
+            true
+            );
+
+            form.addEventListener("blur",(event) => {
+                event.target.style.background = "";
+            },
+            true
+            );
+
+            function myFunction1() {
+                window.alert("Wait A Minute, We Are Checking Stock Inventory");
+            }
+
+
+        </script>
+    
+        <p id="demo"></p>
+
+    </div>
+    <h1 class="id">Purchase Your Camera Here</h1>
+    <div class="flex">
+        <div class="sec">
+            <img onmouseout="normalImg(this)" onmouseover="bigImg(this)" border="0" src="App1.jpg">
+            <p><span>Product:</span>Accessory Bag</p><br>
+            <p><span>Model:</span>Hero 2 to Hero 11</p><br>
+            <p><span>Price:</span>1,00,000</p><br>
+            <p><span>Offer:</span>Flat 25%</p>
+        </div>
+        <div class="sec">
+            <img onmouseout="normalImg(this)" onmouseover="bigImg(this)" border="0" src="Apps2.jpg">
+            <p><span>Product:</span>Batteries & Adapter</p><br>
+            <p><span>Model:</span>Hero 2 to Hero 11</p><br>
+            <p><span>Price:</span>50,000</p><br>
+            <p><span>Offer:</span>Flat 30%</p>
+        </div>
+        <div class="sec">
+            <img onmouseout="normalImg(this)" onmouseover="bigImg(this)" border="0" src="Apps3.jpg">
+            <p><span>Product:</span>Tripod & Mic Mode</p><br>
+            <p><span>Model:</span>Hero 11</p><br>
+            <p><span>Price:</span>35,000</p><br>
+            <p><span>Offer:</span>Flat 8%</p>
+        </div>
+        <script>
+            function bigImg(x) {
+                x.style.height = "300px";
+                x.style.width = "400px";
+            }
+
+            function normalImg(x) {
+                x.style.height = "200px";
+                x.style.width = "300px";
+            }
+        </script>
+    </div>
+</body>
+</html>

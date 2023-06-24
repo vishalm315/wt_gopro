@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color:aquamarine;
+}
+
+nav {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+}
+
+ul{
+    /* border: 1px solid black; */
+    flex: 1;    
+    max-width: 700px;
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+nav ul li{
+    /* display: inline; */
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: magenta;
+}
+
+nav h3{
+    color: #2b2d42;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+
+.firsthalf h3{
+    margin-top:200px;
+    margin-left: 350px;
+    border-top-left-radius: 8px;
+    border: 1px solid #3E92CC;
+    margin-right: 920px;
+    padding-top: 5px;
+    padding-left: 8px;
+    padding-bottom: 5px;
+    padding-right: 0px;
+    background-color: #3E92CC;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.firsthalf .box{
+    background-color: #EFE7DA;
+    margin-left: 350px;
+    margin-right: 600px;
+    height: 200px;
+}
+
+.box p{
+    padding-left: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:400;
+    padding-top: 30px;
+}
+
+.box span{
+    font-weight: bold;
+}
+
+.box h2{
+    padding-top: 10px;  
+    padding-left: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
